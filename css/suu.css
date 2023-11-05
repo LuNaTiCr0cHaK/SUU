@@ -228,7 +228,9 @@ h2 {
 /* Media Query for screens up to 768px wide (typical mobile screens) */
 @media only screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
-
+    body{
+        font-size:8px;
+    }
     main {
         height: auto;
     }
