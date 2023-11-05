@@ -226,24 +226,36 @@ h2 {
 /* Define your base styles here for larger screens */
 
 /* Media Query for screens up to 768px wide (typical mobile screens) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px; /* Adjust the font size for readability on smaller screens */
-    }
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
 
-    h1 {
-        font-size: 40px; /* Adjust the font size for the heading on smaller screens */
+    main {
+        height: auto;
     }
 
     #countdown {
-        font-size: 20px; /* Adjust the font size for the countdown section on smaller screens */
+        top: 10%;
     }
 
-    #message p {
-        font-size: 18px; /* Adjust the font size for the message section on smaller screens */
+    #countdown-timer {
+        font-size: 22px;
     }
 
     .romantic-text {
-        font-size: 22px; /* Adjust the font size for the romantic text on smaller screens */
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
+
+    #message p {
+        font-size: 20px;
+    }
+
+    #access-section {
+        top: 40%;
+        left: 10%;
+        width: 80%;
+    }
+
+    /* Add any additional adjustments needed for smaller screens here */
 }
