@@ -1,0 +1,249 @@
+body {
+    font-family: 'Roller Bubble', sans-serif; /* Updated font-family */
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    /*background-color: #f2c0c0;*/
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Roller Bubble', sans-serif;
+    letter-spacing: 6px; /* Adjust the value to your desired letter spacing */
+}
+
+main {
+    padding: 20px;
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 20%;
+}
+
+#access-section {
+    padding: 20px;
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 20%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color:pink;
+    font-size: 24px;
+}
+
+#countdown-container {
+    position: relative;
+    height: 100%;
+}
+
+#countdown {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 20px; /* Adjust this value to control the vertical spacing */
+    font-size: 24px;
+    color: pink;
+    font-family: 'Roller Bubble', sans-serif; /* Updated font-family */
+}
+
+#countdown-timer {
+    font-size: 26px;
+    color: pink;
+}
+
+
+.romantic-text {
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 25px; /* Adjust the margin-top as needed for the upper margin */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed for the lower margin */
+    line-height: 25px; /* Set line-height to match the font-size */
+}
+
+#message p {
+    top: -20%;
+    font-size: 24px;
+    font-family: 'Roller Bubble', sans-serif;
+    color: pink;
+    line-height: 1.5;
+    letter-spacing: 2px
+}
+
+
+#access-section {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* 30% of viewport width */
+    height: 30%; /* 30% of viewport height */
+}
+
+/* Style for the modal dialog */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    position: absolute;
+}
+
+.modal-content {
+    background: #ffffff80;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the access code input and confirm button */
+#access-code-input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%; /* Adjust as needed */
+}
+
+#access-confirm {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#access-confirm:hover {
+    background: #0056b3;
+}
+
+#imgTxt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+}
+
+#Txt {
+    display: inline-block;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#tmp {
+    display: inline-block;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#imgTxt {
+    position: absolute;
+    display: table;
+    vertical-align: middle;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+}
+
+#typeDiv {
+    position: absolute;
+    top: 20%;
+    left: 15px;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 24px;
+    color: pink;
+    font-family: 'Roller Bubble', sans-serif; /* Updated font-family */
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#gift-container {
+    position: absolute;
+    top: 133%; /* Adjust the top position as needed */
+    left: 45%; /* Position the gift container on the right side */
+    width: 50%; /* Adjust the width to control the position */
+    height: 10%;
+    text-align: center;
+    font-size: 12px;
+    color: pink;
+    font-family: 'Roller Bubble', sans-serif;
+}
+
+#gift-button {
+    /* Add styles for the button within the gift container */
+    display: inline-block; /* Display the button on the right side */
+    text-align: right; /* Align text to the right within the button */
+}
+
+#gift-text {
+    /* Add styles for the gift-text div within the gift container */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    text-align: center; /* Align text to the right within the gift-text div */
+}
+
+
+/* Define your base styles here for larger screens */
+
+/* Media Query for screens up to 768px wide (typical mobile screens) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust the font size for readability on smaller screens */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust the font size for the heading on smaller screens */
+    }
+
+    #countdown {
+        font-size: 20px; /* Adjust the font size for the countdown section on smaller screens */
+    }
+
+    #message p {
+        font-size: 18px; /* Adjust the font size for the message section on smaller screens */
+    }
+
+    .romantic-text {
+        font-size: 22px; /* Adjust the font size for the romantic text on smaller screens */
+    }
+}
