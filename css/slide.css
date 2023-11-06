@@ -21,7 +21,9 @@
     position: relative;
     overflow: hidden; /* Clip the slideshow to the container */
     margin: auto; /* Center the slideshow */
+    z-index: 1; /* Ensure this is higher than the z-index of the background */
   }
+  
   
   
   /* Add a frame-like border to the slideshow */

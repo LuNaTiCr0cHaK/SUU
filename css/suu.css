@@ -9,6 +9,20 @@ header {
     padding: 20px;
 }
 
+
+h1#suu {
+    font-size: 60px;
+    letter-spacing: 6px;
+    margin-top: 0; /* Reset the top margin */
+}
+
+p {
+    font-size: 24px;
+    margin-top: -30px; /* Adjust the margin to move the paragraph up */
+}
+
+
+
 h1 {
     color: white;
     font-size: 60px;
@@ -45,6 +59,7 @@ section {
 h2 {
     color:pink;
     font-size: 24px;
+    margin-top: 25px;
 }
 
 #countdown-container {
@@ -54,7 +69,7 @@ h2 {
 
 #countdown {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 0;
     right: 0;
     text-align: center;
@@ -83,23 +98,14 @@ h2 {
 }
 
 #message p {
-    top: -20%;
+    margin-top: 5px;
     font-size: 24px;
-    font-family: 'Roller Bubble', sans-serif;
+    /*font-family: 'Roller Bubble', sans-serif;*/
     color: pink;
     line-height: 1.5;
     letter-spacing: 2px
 }
 
-
-#access-section {
-    position: fixed;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 30%; /* 30% of viewport width */
-    height: 30%; /* 30% of viewport height */
-}
 
 /* Style for the modal dialog */
 .modal {
@@ -113,6 +119,7 @@ h2 {
     position: absolute;
 }
 
+
 .modal-content {
     background: #ffffff80;
     padding: 20px;
@@ -121,7 +128,20 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the access code input and confirm button */
+#access-section {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* 30% of viewport width */
+    height: 30%; /* 30% of viewport height */
+}
+
+/* Remove margin from the <p> element */
+#access-section p {
+    margin: 0;
+}
+
 #access-code-input {
     margin: 10px 0;
     padding: 5px;
@@ -140,6 +160,8 @@ h2 {
 #access-confirm:hover {
     background: #0056b3;
 }
+
+
 
 #imgTxt {
     position: absolute;
@@ -199,7 +221,7 @@ h2 {
 
 #gift-container {
     position: absolute;
-    top: 133%; /* Adjust the top position as needed */
+    top: 136%; /* Adjust the top position as needed */
     left: 45%; /* Position the gift container on the right side */
     width: 50%; /* Adjust the width to control the position */
     height: 10%;
@@ -215,11 +237,16 @@ h2 {
     text-align: right; /* Align text to the right within the button */
 }
 
+#gift-text p {
+    font-size: 12px; /* Set your desired font size */
+    margin-top: 15px;
+}
+
 #gift-text {
-    /* Add styles for the gift-text div within the gift container */
+    font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: none;
-    text-align: center; /* Align text to the right within the gift-text div */
+    text-align: center;
 }
 
 
@@ -243,21 +270,110 @@ h2 {
         font-size: 8px;
     }
 
-    .romantic-text {
-        font-size: 8px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
     #message p {
-        font-size: 7px;
+        font-size: 12px; 
+        font-family: initial;
     }
 
     #access-section {
+        position: fixed;
         top: 40%;
         left: 40%;
         width: 30%;
+        max-width: 100%; /* Set a maximum width to ensure it doesn't exceed the screen width */
+    }
+    
+
+    .modal-content {
+        background: #ffffff80;
+        padding: 10px; /* Adjust padding as needed */
     }
 
+    p {
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%; /* Ensure the input box takes the full width of the parent container */
+        padding: 8px; /* Adjust padding as needed */
+    }
+
+    button {
+        padding: 10px 16px; /* Adjust padding as needed */
+    }
+
+    header {
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust font size as needed */
+    }
+    #message {
+        margin-top: 180px; /* Increase the margin-top to move the section lower */
+    }
+    #countdown-container {
+        margin-top: 105px; /* Increase the margin-top to move the section lower */
+    }
+    #countdown-timer {
+        font-size: 24px; /* Increase the font size for mobile screens */
+    }
+    a {
+        font-size: 20px !important; /* Decrease the font size for mobile screens */
+    }
+
+
+    .modal-content {
+        background: #ffffff80;
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%; /* Ensure the input box takes the full width of the parent container */
+        padding: 8px; /* Adjust padding as needed */
+    }
+
+    button {
+        padding: 10px 16px; /* Adjust padding as needed */
+    }
+
+    #access-code-input {
+        width: 80%; /* Set the input width to 100% to prevent overflowing */
+        padding: 5px; /* Add some padding to the input element */
+        font-size: 6.6px;
+    }
+    #gift-container {
+        top: 50%;
+        left: 70%; /* Adjust the left position for smaller screens if needed */
+        width: 20%; /* Adjust the width for smaller screens */
+    }
+
+    #gift-button {
+        display: block;
+        text-align: center;
+        width: 100%; /* Set to 100% to occupy the entire width */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow text */
+        text-overflow: ellipsis; /* Add an ellipsis (...) for overflow text */
+        height: 20%;
+        line-height: 20%; /* Center text vertically within the button */
+    }
+
+    #gift-text p {
+        font-size: 9px;
+        margin-top: -5px; /* Adjust margin as needed */
+    }
+
+    #gift-text {
+        display: block; /* Display the message text block */
+        font-size: 7px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center; /* Center the text horizontally */
+    }
     /* Add any additional adjustments needed for smaller screens here */
 }
+
